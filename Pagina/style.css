@@ -1,0 +1,447 @@
+/* Estilos generales */
+body {
+    font-family: 'Tropica', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #000000;
+}
+.wave-divider-1 svg {
+    background-color: #ffffff;
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+.wave-divider-2 svg {
+    background-color: #8C0633;
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+.wave-divider-3 svg {
+    background-color: #F5C016;
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+.wave-divider-4 svg {
+    background-color: #F5C016;
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+.wave-divider-5 svg {
+    background-color: #ffffff;
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+.divisor {
+    position: relative;
+    background-color: #F5C016;
+    width: 100%;
+    height: 10px;
+    overflow: hidden;
+}
+.divisorp2 {
+    position: relative;
+    background-color: #2c3e50;
+    width: 100%;
+    height: 10px;
+    overflow: hidden;
+}
+
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #76A800;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+header div{
+     display: flex;
+}
+header img{
+    width: 40px;
+    height: auto;
+    margin-right: 0.3rem;
+}
+
+.logo {
+    display: flex;
+    font-family: 'trebuchet ms', sans-serif;
+    align-items: center; 
+    height: 100%; 
+}
+.logo h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: medium;
+    text-align: center;
+    
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin-left: 1.5rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #8C0633;
+}
+
+/* Estilos del carrusel */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 0px;
+}
+
+.slide-content h2 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+    left: 0px;
+}
+
+.next-btn {
+    right: 0px;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: white;
+}
+
+/* Sección Quiénes Somos */
+#quienes-somos {
+    background-color: #ffffff;
+    padding: 4rem 0 4rem 0;
+    scroll-margin-top: 100px;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#quienes-somos img {
+     display: block; /* Cambia de flex a block para mejor control */
+    width: 20%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 2rem auto; /* 2rem de margen arriba/abajo y auto en los lados para centrar */
+    max-width: 300px; /* Opcional: tamaño máximo para no hacerla muy grande */
+    
+}
+
+#quienes-somos h2 {
+    color: #8C0633;
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+
+#quienes-somos p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Sección Misión */
+#mision {
+    background-color: #8C0633;
+    color: white;
+    width: 100%;
+    padding: 1rem 0 5rem 0;
+    scroll-margin-top: 100px;
+}
+
+#mision h2 {
+    color: #ffffff;
+    text-align: right;
+    padding-right: 10%;
+}
+
+#mision h2::after {
+    background-color: #F5C016;
+    right: 10%;
+    left: auto;
+}
+
+#mision p {
+    background-color: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 70%;
+        font-style: italic;
+
+    margin-left: auto;
+    margin-right: 10%;
+    border-left: 4px solid #F5C016;
+}
+
+/* Sección Visión */
+#vision {
+    background-color: #F5C016;
+    color: #333;
+    padding: 1rem 0;
+    scroll-margin-top: 100px;
+}
+
+#vision h2 {
+    color: #8C0633;
+    text-align: left;
+    padding-left: 10%;
+}
+
+#vision h2::after {
+    background-color: #76A800;
+}
+
+#vision p {
+    background-color: rgba(255,255,255,0.7);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 70%;
+    margin-right: auto;
+    margin-left: 10%;
+    border-right: 4px solid #76A800;
+    font-style: italic;
+}
+
+/* Sección Apoyo Social */
+#apoyo-social {
+    background-color: #ffffff;
+    background-image: radial-gradient(circle at center, #f8f9fa 0%, #ffffff 100%);
+    padding: 1rem 0;
+    scroll-margin-top: 100px;
+}
+
+#apoyo-social h2 {
+    color: #76A800;
+    text-align: center;
+    letter-spacing: 0px;
+    font-size: xx-large;
+    scroll-margin-top: 100px;
+}
+
+#apoyo-social h2::after {
+    display: none;
+}
+
+#apoyo-social p {
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 3rem;
+}
+
+/* Cartas de Apoyo Social */
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 5px solid #76A800;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: #8C0633;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    color: #333;
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+
+
+/* Sección Contáctanos */
+#contactanos {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    scroll-margin-top: 100px;
+}
+
+#contactanos h2 {
+    color: #F5C016;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+
+#contactanos h2::after {
+    display: none;
+}
+
+#contactanos p {
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #76A800;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    #quienes-somos{
+    margin-left: 5%;
+    margin-right: 5%;
+    }
+    #quienes-somos h2{
+    font-size: large;
+    background-color: #ffffff;
+    scroll-margin-top: 100px;
+    position: relative;
+    }
+    #quienes-somos p{
+    font-size: small;
+    scroll-margin-top: 100px;
+    position: relative;
+    }
+    .nav-list {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-list li {
+        margin: 0.5rem;
+    }
+
+    #mision p, #vision p {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 250px;
+    }
+}
